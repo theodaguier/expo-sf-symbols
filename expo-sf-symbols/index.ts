@@ -1,3 +1,3 @@
 import SFSymbols from "expo-sf-symbols";
 
-export default SFSymbols;
+export { SFSymbols as default };
