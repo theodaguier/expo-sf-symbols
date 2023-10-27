@@ -1,6 +1,6 @@
 {
   "name": "sf-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "expo-sf-symbols/index.tsx",
   "scripts": {
     "start": "expo start",
