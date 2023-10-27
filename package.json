@@ -1,7 +1,7 @@
 {
   "name": "sf-icons",
   "version": "1.0.2",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -19,7 +19,8 @@
     "react-native-screens": "~3.22.0",
     "react-native-svg": "13.9.0",
     "react-native-svg-transformer": "^1.1.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "sf-icons": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
