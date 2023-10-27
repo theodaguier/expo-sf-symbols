@@ -1,7 +1,7 @@
 {
   "name": "sf-icons",
   "version": "1.0.4",
-  "main": "expo-sf-symbols/index.tsx",
+  "main": "expo-sf-symbols/index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
