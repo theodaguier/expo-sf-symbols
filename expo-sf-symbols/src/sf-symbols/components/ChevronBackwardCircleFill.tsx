@@ -1,0 +1,31 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_37292)">
+<path d="M13.9677 25.9511C20.5068 25.9511 25.9208 20.5254 25.9208 13.998C25.9208 7.45898 20.4951 2.04492 13.956 2.04492C7.42871 2.04492 2.01465 7.45898 2.01465 13.998C2.01465 20.5254 7.44043 25.9511 13.9677 25.9511Z" fill="currentColor" fill-opacity="0.85"/>
+<path d="M16.288 19.7988C15.9834 20.0918 15.374 20.0683 15.0458 19.7637L10.1709 15.1582C9.50293 14.5488 9.50293 13.4707 10.1709 12.8613L15.0458 8.25587C15.4091 7.91602 15.9482 7.90431 16.2763 8.22071C16.6396 8.56055 16.6513 9.14649 16.2998 9.47462L11.4834 13.998L16.2998 18.5449C16.6396 18.873 16.6513 19.4355 16.288 19.7988Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_37292">
+<rect width="23.9062" height="23.918" fill="currentColor" transform="translate(2.01465 2.04492)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const ChevronBackwardCircleFill = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

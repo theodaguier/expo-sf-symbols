@@ -1,0 +1,30 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_37436)">
+<path d="M3.06519 18.7671C3.06519 23.2554 6.0066 26.2437 11.2566 26.2437H13.9636C14.6082 26.2437 15.03 25.7749 15.03 25.2007C15.03 24.6265 14.6082 24.1577 13.9636 24.1577H11.2683C7.27222 24.1577 5.15113 21.814 5.15113 18.6499C5.15113 15.4976 7.27222 13.2944 11.2683 13.2944H19.3074L22.9519 13.1304L22.741 12.5913L19.8347 15.0757L16.4597 18.3687C16.2722 18.5562 16.1785 18.7788 16.1785 19.0835C16.1785 19.6929 16.5886 20.1148 17.2097 20.1148C17.4675 20.1148 17.7722 19.9976 17.9714 19.7866L24.8621 13.0249C25.0964 12.8022 25.2136 12.5327 25.2136 12.2515C25.2136 11.9585 25.0964 11.689 24.8621 11.4663L17.9714 4.70458C17.7722 4.50537 17.4675 4.37646 17.2097 4.37646C16.5886 4.37646 16.1785 4.79833 16.1785 5.40771C16.1785 5.7124 16.2722 5.93506 16.4597 6.12256L19.8347 9.42725L22.741 11.8999L22.9519 11.3608L19.3074 11.1968H11.4441C6.08863 11.1968 3.06519 14.2905 3.06519 18.7671Z" fill="currentColor" fill-opacity="0.85"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_37436">
+<rect width="22.1484" height="24.2227" fill="currentColor" transform="translate(3.06519 2.021)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const ArrowUturnRight = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

@@ -1,0 +1,30 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_33989)">
+<path d="M4.75439 24.1777L23.1176 24.166C23.3403 24.166 23.563 24.1308 23.7036 24.0488L12.2544 12.5996L3.82861 21.0136C3.3833 21.4707 3.09033 21.9042 3.09033 22.5371C3.09033 23.5214 3.72314 24.1777 4.75439 24.1777ZM25.0278 22.8066C25.1098 22.6308 25.145 22.3847 25.145 22.1386V3.77539C25.145 2.75586 24.4887 2.12305 23.5044 2.12305C22.8833 2.12305 22.438 2.4043 21.9809 2.86133L13.5317 11.3105L25.0278 22.8066Z" fill="currentColor" fill-opacity="0.85"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_33989">
+<rect width="22.0547" height="24.4805" fill="currentColor" transform="translate(3.09033 2.12305)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const RighttriangleSplitDiagonalFill = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

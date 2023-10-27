@@ -1,0 +1,31 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_35336)">
+<path d="M14.0161 26.0132C20.5552 26.0132 25.9692 20.5991 25.9692 14.06C25.9692 7.53271 20.5435 2.10693 14.0044 2.10693C7.47705 2.10693 2.06299 7.53271 2.06299 14.06C2.06299 20.5991 7.48877 26.0132 14.0161 26.0132Z" fill="currentColor" fill-opacity="0.85"/>
+<path d="M11.2505 9.53662C11.2505 8.01318 12.5044 6.78271 14.0161 6.78271C15.5396 6.78271 16.7818 8.01318 16.7818 9.53662C16.7818 10.7905 15.9614 11.8218 14.8482 12.1499V18.2085C14.8482 20.0132 14.5786 21.5718 14.0161 21.5718C13.4653 21.5718 13.1724 19.978 13.1724 18.2085V12.1499C12.0708 11.8101 11.2505 10.7788 11.2505 9.53662ZM12.4341 8.83349C12.4341 9.30224 12.8442 9.7124 13.3013 9.7124C13.7818 9.7124 14.1802 9.30224 14.1802 8.83349C14.1802 8.35302 13.7818 7.94287 13.3013 7.94287C12.8442 7.94287 12.4224 8.35302 12.4341 8.83349Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_35336">
+<rect width="23.9062" height="23.918" fill="currentColor" transform="translate(2.06299 2.09521)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const MappinCircleFill = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

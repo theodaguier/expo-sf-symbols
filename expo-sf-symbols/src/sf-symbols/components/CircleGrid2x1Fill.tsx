@@ -1,0 +1,31 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="31" height="29" viewBox="0 0 31 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_34039)">
+<path d="M23.9924 20.6867C27.7307 20.6867 30.801 17.6164 30.801 13.8665C30.801 10.1282 27.7307 7.04614 23.9924 7.04614C20.2307 7.04614 17.1721 10.1282 17.1721 13.8665C17.1721 17.6164 20.2307 20.6867 23.9924 20.6867Z" fill="currentColor" fill-opacity="0.85"/>
+<path d="M6.90649 20.6867C10.6448 20.6867 13.7151 17.6164 13.7151 13.8665C13.7151 10.1282 10.6448 7.04614 6.90649 7.04614C3.13306 7.04614 0.0861816 10.1282 0.0861816 13.8665C0.0861816 17.6164 3.13306 20.6867 6.90649 20.6867Z" fill="currentColor" fill-opacity="0.85"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_34039">
+<rect width="30.7148" height="13.6523" fill="currentColor" transform="translate(0.0861816 7.04614)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const CircleGrid2x1Fill = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

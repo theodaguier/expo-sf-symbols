@@ -1,0 +1,30 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_34332)">
+<path d="M2.63599 24.7158H25.1711C26.3079 24.7158 26.7883 24.1064 26.7883 23.4033C26.7883 23.1103 26.7063 22.7939 26.5422 22.4893L15.2102 2.86035C14.9407 2.37988 14.425 2.14551 13.9094 2.14551C13.3821 2.14551 12.8782 2.37988 12.5969 2.86035L1.27661 22.4893C1.11255 22.7939 1.0188 23.1103 1.0188 23.4033C1.0188 24.1064 1.49927 24.7158 2.63599 24.7158Z" fill="currentColor" fill-opacity="0.85"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_34332">
+<rect width="25.7695" height="23.168" fill="currentColor" transform="translate(1.0188 2.14551)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const TriangleshapeFill = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

@@ -1,0 +1,30 @@
+
+import React from "react";
+import { SvgXml } from "react-native-svg";
+
+interface IconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+  opacity?: number;
+}
+
+const iconXml = `
+<svg width="29" height="29" viewBox="0 0 29 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2207_34358)">
+<path d="M1.28291 12.8941L4.73994 23.6402C5.26728 25.3159 6.42744 26.1714 8.20869 26.1714H19.2946C21.0758 26.1714 22.236 25.3159 22.7633 23.6402L26.1969 12.9409C26.7594 11.2066 26.3258 9.83545 24.9196 8.8042L15.943 2.20654C14.4782 1.1167 13.0251 1.1167 11.5602 2.20654L2.58369 8.8042C1.17744 9.83545 0.743844 11.1948 1.28291 12.8941ZM3.82588 14.687H23.6774L20.9938 23.0659C20.7126 23.9566 20.2438 24.2847 19.2946 24.2847H8.20869C7.25947 24.2847 6.79072 23.9566 6.50947 23.0659L3.82588 14.687Z" fill="currentColor" fill-opacity="0.85"/>
+</g>
+<defs>
+<clipPath id="clip0_2207_34358">
+<rect width="25.3769" height="25.0664" fill="currentColor" transform="translate(1.05884 1.10498)"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+export const PentagonTophalfFilled = (props: IconProps) => {
+  return (
+    <SvgXml xml={iconXml} width={props.width || 40} height={props.height || 40} color={props.color || "black"} opacity={props.opacity || 1} />
+  );
+};

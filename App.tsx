@@ -1,16 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import {
-  ArrowBackward,
-  Arrow3Trianglepath,
-} from "./expo-sf-symbols/sf-symbols";
+import { StyleSheet, View } from "react-native";
+import SFSymbols from "./expo-sf-symbols";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <ArrowBackward width={100} height={100} color="" />
-      <Arrow3Trianglepath width={100} height={100} color="" />
+      <SFSymbols name="ChevronLeft" width={100} height={100} opacity={1} />
     </View>
   );
 }
