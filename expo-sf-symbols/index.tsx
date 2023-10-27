@@ -11,7 +11,7 @@ interface Props {
   opacity?: number;
 }
 
-export function SFSymbols({
+function SFSymbols({
   name,
   width = 24,
   height = 24,
@@ -24,3 +24,5 @@ export function SFSymbols({
     <IconComponent width={width} height={height} opacity={opacity} {...props} />
   );
 }
+
+export default SFSymbols;
