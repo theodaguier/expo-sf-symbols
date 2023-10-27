@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-import SFSymbols from "sf-icons";
+import SFSymbols from "expo-sf-symbols";
 
 export default function App() {
   return (

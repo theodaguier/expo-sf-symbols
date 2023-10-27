@@ -20,9 +20,18 @@ function SFSymbols({
 }: Props) {
   const IconComponent = Icons[name];
 
-  return (
-    <IconComponent width={width} height={height} opacity={opacity} {...props} />
-  );
+  if (IconComponent) {
+    return (
+      <IconComponent
+        width={width}
+        height={height}
+        opacity={opacity}
+        {...props}
+      />
+    );
+  } else {
+    return <div>{name}</div>;
+  }
 }
 
 export default SFSymbols;

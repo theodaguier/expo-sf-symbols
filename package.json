@@ -1,6 +1,6 @@
 {
   "name": "sf-icons",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "expo": "~49.0.15",
+    "expo-sf-symbols": "^1.0.7",
     "expo-status-bar": "~1.6.0",
     "lodash": "^4.17.21",
     "metro": "^0.80.0",
