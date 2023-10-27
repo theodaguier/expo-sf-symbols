@@ -1,3 +1,3 @@
-import React from "react";
+import SFSymbols from "expo-sf-symbols";
 
-export * as SFSymbols from "./index";
+export default SFSymbols;
