@@ -1,6 +1,15 @@
 import React from "react";
-import * as Icons from "./src/sf-symbols/components";
-import { IconName } from "./types/IconName";
+import * as Icons from "./sf-symbols/components";
+import { IconName } from "../types/IconName";
+
+interface SFSymbols {
+  name: IconName;
+  width?: number;
+  height?: number;
+  color?: string;
+  style?: any;
+  opacity?: number;
+}
 
 interface Props {
   name: IconName;

@@ -1,8 +1,8 @@
 {
   "name": "expo-sf-symbols",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

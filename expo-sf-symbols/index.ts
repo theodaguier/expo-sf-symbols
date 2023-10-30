@@ -1,3 +1,8 @@
-import SFSymbols from "expo-sf-symbols";
+// index.ts main file for expo-sf-symbols
 
-export { SFSymbols as default };
+import SFSymbols from "./src/";
+
+export default SFSymbols;
+
+// Path: expo-sf-symbols/src/index.ts
+// index.ts main file for expo-sf-symbols/src
