@@ -1,35 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
+import { Text, View } from "react-native";
 import * as Icons from "./sf-symbols/components";
 import { IconName } from "../types/IconName";
 
-interface SFSymbols {
-  name: IconName;
-  width?: number;
-  height?: number;
-  color?: string;
-  style?: any;
-  opacity?: number;
-}
-
+// Définissez votre classe de composant
 interface Props {
   name: IconName;
   width?: number;
   height?: number;
+  opacity?: number;
   color?: string;
   style?: any;
-  opacity?: number;
 }
 
-export function SFSymbols({
-  name,
-  width = 24,
-  height = 24,
-  opacity = 1,
-  ...props
-}: Props) {
-  const IconComponent = Icons[name];
+interface State {}
 
-  return (
-    <IconComponent width={width} height={height} opacity={opacity} {...props} />
-  );
+class SFSymbols extends Component<Props, State> {
+  // Définissez votre constructeur de classe
+  constructor(props) {
+    super(props);
+  }
+
+  // Définissez votre méthode de rendu
+
+  render() {
+    const { name, width, height, opacity, color, style } = this.props;
+
+    const IconComponent = Icons[name];
+
+    return (
+      <IconComponent
+        width={width || 24}
+        height={height || 24}
+        opacity={opacity || 1}
+        color={color}
+        style={style}
+      />
+    );
+  }
 }
+
+export { SFSymbols };
