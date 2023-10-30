@@ -34,4 +34,4 @@ function SFSymbols({
   );
 }
 
-export default SFSymbols;
+module.exports = SFSymbols;

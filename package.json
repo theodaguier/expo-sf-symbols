@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "expo": "~49.0.15",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
     "lodash": "^4.17.21",
     "metro": "^0.80.0",
@@ -19,9 +20,7 @@
     "react-native-screens": "~3.22.0",
     "react-native-svg": "13.9.0",
     "react-native-svg-transformer": "^1.1.0",
-    "react-native-web": "~0.19.6",
-    "expo-sf-symbols": "file:expo-sf-symbols",
-    "expo-splash-screen": "~0.20.5"
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
