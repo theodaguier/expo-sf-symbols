@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
-import * as Icons from "./sf-symbols/components";
-import { IconName } from "../types/IconName";
+import * as Icons from "./src/sf-symbols/components";
+import { IconName } from "./types/IconName";
 
 // Définissez votre classe de composant
 interface Props {
